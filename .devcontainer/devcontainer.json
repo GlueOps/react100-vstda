@@ -12,7 +12,25 @@
 		"github-cli": "latest",
 		"sshd": "latest",
 		"node": "16.14.0",
-	}
+	},
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+		  // Add the IDs of extensions you want installed when the container is created.
+		  "extensions": [
+		  //"CoenraadS.bracket-pair-colorizer", - should already installed as part of VS code so it's commented out.
+		  "dsznajder.es7-react-js-snippets",
+		  "eamodio.gitlens",
+		  "ecmel.vscode-html-css",
+		  "abusaidm.html-snippets", // this one is deprecated/not maintained. Might be worth finding a new extension if possible.
+		  "oderwat.indent-rainbow",
+		  "esbenp.prettier-vscode",
+		  "ChakrounAnas.turbo-console-log",
+		  "ritwickdey.LiveServer",
+		  "ms-vscode.live-server"
+		  ]
+		}
+	  }
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
